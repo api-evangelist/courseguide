@@ -1,7 +1,24 @@
 aid: courseguide
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/courseguide.png
 name: CourseGuide
-description: CourseGuide is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: CourseGuide is a portfolio-lead company in the API Evangelist network, surfaced from the
+  500 Global portfolio and mapped to coursereport.com. Course Report is a consumer-facing education
+  platform that helps prospective students discover, compare, and review coding bootcamps, certification
+  courses, and professional training programs, aggregating 900+ programs and tens of thousands of alumni
+  reviews alongside rankings, career-matching tools, and guidance content. No public API, developer
+  portal, or machine-readable API surface was found during enrichment; this profile remains a lead with
+  only domain-security posture and public web properties captured.
 url: https://raw.githubusercontent.com/api-evangelist/courseguide/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Education
+- Bootcamps
+- Training
+- Reviews
+- Careers
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/courseguide-domain-security.yml
 - type: Website
   url: https://coursereport.com
+- type: Blog
+  url: https://coursereport.com/blog
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
